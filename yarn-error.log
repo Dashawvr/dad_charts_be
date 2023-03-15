@@ -1,0 +1,37 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add
+
+PATH: 
+  /Users/dashaonishchenko/.rvm/gems/ruby-3.0.0/bin:/Users/dashaonishchenko/.rvm/gems/ruby-3.0.0@global/bin:/Users/dashaonishchenko/.rvm/rubies/ruby-3.0.0/bin:/Users/dashaonishchenko/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/dashaonishchenko/Documents/dad_charts/node_modules/.bin:/Users/dashaonishchenko/.rvm/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.15.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/dashaonishchenko/Documents/dad_charts/package.json: Unexpected token ' in JSON at position 72
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "dad_charts",
+    "version": "1.0.0",
+    "dependencies": {
+      'express': "^4.18.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

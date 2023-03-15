@@ -1,0 +1,19 @@
+
+# compiled output
+/dist
+/node_modules
+.serverless
+.build
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.DS_Store
+
+#Local environment config
+.env
