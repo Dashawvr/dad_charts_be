@@ -24,13 +24,16 @@ CREATE TABLE IF NOT EXISTS sessions
     FOREIGN KEY (user_id) REFERENCES users (id)
 );
 
-
-
-CREATE TABLE IF NOT EXISTS  events
+CREATE TABLE IF NOT EXISTS events
 (
-    id           SERIAL PRIMARY KEY,
-    user_id      INTEGER REFERENCES users (id),
-    session_id   INTEGER REFERENCES sessions (id),
-    event_name   VARCHAR(255) NOT NULL,
-    date_created TIMESTAMP DEFAULT NOW()
+    id            BIGSERIAL    NOT NULL PRIMARY KEY,
+    timestamp  TIMESTAMP NOT NULL,
+    app        TEXT      NOT NULL,
+    user_id    TEXT      NOT NULL,
+    device     TEXT      NOT NULL,
+    country    TEXT      NOT NULL,
+    session    TEXT      NOT NULL,
+    log_type   TEXT      NOT NULL,
+    event_type TEXT      NOT NULL,
+    meta_data  JSONB
 );

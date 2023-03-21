@@ -18,4 +18,4 @@ app.use((req, res, next) => {
     next();
 });
 
-app.listen(config.SERVER_PORT, () => console.log(`(☞ﾟヮﾟ)☞ Server ready leat http://localhost:${config.SERVER_PORT}/ ☜(ﾟヮﾟ☜)`));
+app.listen(config.SERVER_PORT, () => console.log(`(☞ﾟヮﾟ)☞ Server ready listen http://localhost:${config.SERVER_PORT}/ ☜(ﾟヮﾟ☜)`));

@@ -13,7 +13,11 @@ router.get('/sessions', userController.getSessionData);
 
 router.get('/countrybreakdown', userController.getCountryBreakdown);
 
-router.get('/topevents', userController.getTopEvents);
+router.get('/sessions-by-date', userController.getSessionsByDate);
+
+router.get('/metrics', userController.getMetrics)
+
+router.get('/metrics/:metricId', userController.getMetricId)
 
 router.get('/retention', userController.getRetention)
 
